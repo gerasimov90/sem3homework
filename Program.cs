@@ -30,7 +30,7 @@ else Console.WriteLine("Неверный ввод числа. ");
 
 Напишите программу, которая принимает на вход координаты двух точек
 и находит расстояние между ними в 3D пространстве.
-*/
+
 Console.Write("Введите координату х1: ");
 int x1 = Convert.ToInt32(Console.ReadLine());
 
@@ -52,7 +52,23 @@ int z2 = Convert.ToInt32(Console.ReadLine());
 double d = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2));
 
 Console.WriteLine("Расстояние между 2 точками: " + Math.Round(d,2));
+*/
 
+/*
+Задача 23
 
+Напишите программу, которая принимает на вход
+число (N) и выдаёт таблицу кубов чисел от 1 до N.
+*/
+Console.Write("Введите число N:");
+int finish = Convert.ToInt32(Console.ReadLine()); // Идем от 1 до N: [1;N]
+
+int start = 1; // start -> finish
+
+while (start <= finish)
+{
+    Console.Write(Math.Pow(start,3) + " ");
+    start++; // start++ => start = start + 1
+}
 
 
