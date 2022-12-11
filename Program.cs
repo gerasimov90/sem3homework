@@ -10,7 +10,7 @@ if (number < 100000 && number >= 10000)
 {
     int firstnumb = number / 10000;
 
-    int secondnumb = (number - firstnumb*1000)/1000;
+    int secondnumb = (number - firstnumb*10000)/1000;
 
     int lastnumb = number % 10;
 
